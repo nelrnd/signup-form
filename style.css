@@ -1,0 +1,72 @@
+:root {
+  --grey: #ECEEF0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Norse';
+  src: url(./Norse-Bold.otf);
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  min-height: 100vh;
+  display: flex;
+}
+
+aside {
+  background-image: url(./background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: max(33vw, 800px);
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-banner {
+  margin-top: 200px;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.logo-img {
+  height: 100px;
+  width: auto;
+}
+.logo-text {
+  color: white;
+  font-family: 'Norse';
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 0;
+  position: relative;
+  top: 10px;
+}
+
+.credits {
+  color: white;
+  text-align: center;
+
+  position: absolute;
+  width: 100%;
+  bottom: 1rem;
+  opacity: .8;
+}
+.credits a {
+  color: white;
+}
+
+main {
+  background-color: var(--grey);
+}
