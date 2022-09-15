@@ -108,6 +108,10 @@ input {
   border: 1px solid var(--grey);
   border-radius: 4px;
 }
+input:focus {
+  outline: solid 1px var(--main);
+  border-color: var(--main);
+}
 
 button {
   color: white;
